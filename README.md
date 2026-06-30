@@ -1,4 +1,3 @@
----
 **chAIn OS — Official Specification**  
 **Version:** 1.0  
 **SNS Core Reference:** `xn--9-4lb.sol`  
