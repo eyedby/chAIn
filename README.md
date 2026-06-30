@@ -3,7 +3,7 @@
 **SNS Core Reference:** `xn--9-4lb.sol`  
 **Protocol:** Consent Stack
 
-### 1. Abstract
+### Δ9
 
 chAIn OS is a decentralized sovereign execution environment that replaces ambiguous data processing with immutable, protocol-enforced logic.
 
