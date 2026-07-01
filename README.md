@@ -3,7 +3,30 @@
 **SNS Core Reference:** `xn--9-4lb.sol`  
 **Protocol:** Consent Stack
 
-### Δ9
+### chAIn: Sovereign Infrastructure Protocol
+The device obeys its last signed instruction until a new instruction is cryptographically enforced.
+
+1. The Directive
+chAIn removes the requirement for the user to "manage" an operating system. The system does not "update" unless authorized by the Conductor; it does not "track" unless permitted by the registry. It exists in a state of permanent adherence to its current local policy.
+
+2. Zero-Hoop Governance
+The user is not required to jump through hoops, navigate menus, or fight update cycles.
+
+The "Setup" is a singular event: Once chAIn is initiated, the device is locked to the SNS jurisdiction (xn--9-4lb.sol).
+
+The "Maintenance" is non-existent: The kernel-level eBPF filter automatically drops unauthorized packets or process-injection attempts. The system requires no further input from the user to maintain its security posture.
+
+3. The "Forever" Parameter
+The device acts with temporal indifference. Whether it is one hour or ten years after the last signed instruction, the device will continue to execute that command with absolute precision.
+
+No "End of Support" dates.
+
+No "Forced Deprecation" of features.
+
+No "UI Overhauls" that hide your controls.
+
+4. Interpretation Only
+The GUI is not a control panel for the user to "do work." It is a Transparent Interpreter. It exists solely to translate the device's internal state—what it is currently doing and why—into plain, secure text. The user is a witness to the device's adherence, not a babysitter.
 
 chAIn OS is a decentralized sovereign execution environment that replaces ambiguous data processing with immutable, protocol-enforced logic.
 
