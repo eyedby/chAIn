@@ -1,0 +1,30 @@
+# aiOut Sovereign Registry Manifest
+# This file anchors your device's identity to the Protocol.Land/Arweave network.
+
+[identity]
+handle = "your-device.sol"          # SNS resolution pointer
+did = "did:sol:your-pubkey-hash"    # Decentralized Identifier for device
+version = "1.0.0"
+
+[security.xdp]
+# Path to the compiled BPF bytecode (pinned to Arweave)
+filter_program = "cid:bafybeig..."  
+# Policy for the scraper-blocker
+policy_mode = "strict"              # Options: strict, observation, permissive
+update_frequency = "on_demand"      # Triggered by biometric signature
+
+[security.biometric]
+# Public key requirement for the Secure Enclave signing
+algorithm = "ES256"
+auth_required = true
+# Enforce that the Secure Enclave signature must be present for any rule update
+enforce_signature = true            
+
+[dependencies]
+# Links to other protocol components
+consent_stack = { git = "https://github.com/eyedby/aiout", branch = "main" }
+
+[metadata]
+description = "Sovereign firewall and identity hub for local-first aiOut device."
+license = "MIT"
+last_updated = 2026-07-01

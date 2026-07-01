@@ -1,0 +1,26 @@
+flowchart TD
+    subgraph UserControl ["User Control (ZK)"]
+        User[User Wallet\nSets limits & intent] --> ZK[ZK Proof:\nAvailability + Limits]
+    end
+
+    ZK --> SmartMeter
+
+    subgraph SmartMeter ["Smart Meter Contract"]
+        Meter[Usage Meter\n- Bid slots used\n- Appointments booked\n- Expiry timer]
+        Limit[Enforce Limits\n- e.g. 5 bids/day\n- Metered gas paywall]
+        Expire[Expiring Intent\nTTL countdown]
+    end
+
+    subgraph AISwitch ["AI Out Switch"]
+        AI[AI Module\n- Scores bids\n- Auto-prioritize\n- Dynamic limit adjust]
+    end
+
+    SmartMeter <--> AISwitch
+
+    SmartMeter --> Marketplace[Bid Opportunity Marketplace]
+    Marketplace --> Provider[Datacenter / Bidder\nPays gas for access]
+
+    Provider -->|Successful Bid| Appointment[Metered Appointment\nSealed Deal]
+
+    style SmartMeter fill:#e0f7fa
+    style AISwitch fill:#f3e5f5
