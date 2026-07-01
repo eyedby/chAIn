@@ -1,0 +1,10 @@
+[node]
+handle = "yournode.sol"
+version = "0.1.0"
+
+[applets]
+# Set these to true to activate, false to drop
+5g-scrape-block = true
+sovereign-mesh = false
+local-audit-feed = true
+power-optimizer = true
