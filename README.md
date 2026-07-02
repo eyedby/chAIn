@@ -29,7 +29,7 @@ In the current web, you are a guest in someone else’s server room. We’ve bui
 
 Local-First: All data and execution logic stay on your hardware.
 
-Biometric-Gated: Every interaction is authenticated by your device’s Secure Enclave, ensuring only you can authorize actions.
+Every interaction is authenticated by your device’s Secure Enclave, ensuring only you can authorize actions.
 
 Protocol-Driven: No central servers, no backdoors, no "phony" metrics. Just immutable code anchored to the permaweb.
 
@@ -41,7 +41,8 @@ aiOut uses eBPF/XDP to filter network traffic at the kernel level. Before a pack
 Each device is a sovereign entity. We link your hardware to a unique SNS resolution. When you interact with the digital world, you present a cryptographically signed proof from your device, not a tracking cookie.
 
 3. The "Protect My Identity" Action
-The core of aiOut is a one-touch biometric handshake. When you trigger the Protect My Identity action, your device performs a WebAuthn ceremony, cryptographically signing your intent and updating your local filtering rules—all without a single line of telemetry being sent to a third party.
+ When you trigger the Protect My Identity action, your device performs a WebAuthn ceremony, cryptographically signing your intent and updating your local filtering rules—all without a single line of telemetry being sent to a third party.
+<img width="2370" height="1792" alt="chAIn" src="https://github.com/user-attachments/assets/b505e9c3-0ce5-44b8-9efa-5bd261ab0a4a" />
 
 Quick Start
 Clone the Repository:
@@ -56,7 +57,9 @@ Deploy:
 Use your local agent to pin your configuration to the Protocol.Land/Arweave network.
 
 Activate:
-Run the local agent to initialize the kernel-level XDP filter.
+Run the local agent to initialize the kernel-level XDP filter. 
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/33697345-b75d-475c-a218-f51e768fec07" />
+
 
 Why Open Source?
 We believe that trust should be verified by math, not promised by a company. The aiout stack is 100% open source because the code that governs your identity and privacy should be transparent, forkable, and immune to corporate interference.
