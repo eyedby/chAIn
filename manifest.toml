@@ -3,8 +3,11 @@ handle = "yournode.sol"
 version = "0.1.0"
 
 [applets]
-# Set these to true to activate, false to drop
+# Core Infrastructure
 5g-scrape-block = true
 sovereign-mesh = false
+
+# Modular Hot-Swappable Cards
 local-audit-feed = true
 power-optimizer = true
+energy-audit-card = true  # Set to false to entirely wipe the routine from execution space
