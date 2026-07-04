@@ -16,3 +16,4 @@ toml = "0.8"
 # Kernel-Level Gate Enforcement (Updated to native Ebpf runtime API)
 aya = "0.14"
 aya-log = "0.2"
+openssl = { version = "0.10", features = ["vendored"] }
