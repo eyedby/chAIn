@@ -4,15 +4,15 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-# Solana Settlement & Provenance Layer
-solana-sdk = "2.0"
-solana-client = "2.0"
+# Solana Settlement & Provenance Layer (Updated for 2026 Agave/Clusters)
+solana-sdk = "4.0"
+solana-client = "4.0"
 
 # Local Sovereign UI Engine & Sockets
 tauri = { version = "2.0", features = ["shell-open"] }
 serde = { version = "1.0", features = ["derive"] }
 toml = "0.8"
 
-# Kernel-Level Gate Enforcement (eBPF)
-aya = "0.12"
+# Kernel-Level Gate Enforcement (Updated to native Ebpf runtime API)
+aya = "0.14"
 aya-log = "0.2"
