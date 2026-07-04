@@ -1,13 +1,25 @@
+# =====================================================================
+# chAIn & aiOut: Sovereign Node Manifest Configuration Spec
+# =====================================================================
+
 [node]
+# The Decentralized Identifier mapping to your cryptographic identity
 handle = "yournode.sol"
 version = "0.1.0"
+edition = "2021"
 
 [applets]
-# Core Infrastructure
+# Core Infrastructure (Enforced instantly via kernel-level eBPF/XDP)
 5g-scrape-block = true
 sovereign-mesh = false
 
-# Modular Hot-Swappable Cards
+# Modular Hot-Swappable Cards (Dynamic UI/Telemetry components)
 local-audit-feed = true
 power-optimizer = true
-energy-audit-card = true  # Set to false to entirely wipe the routine from execution space
+energy-audit-card = true  # Set to false to entirely drop the audit routine footprint
+
+[network]
+# Anchoring environment destination parameters for mathematical validation
+rpc_endpoint = "https://api.mainnet-beta.solana.com"
+ipc_socket_pipe = "/tmp/chain_protocol.sock"
+provenance_archive = "Protocol.Land"
